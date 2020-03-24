@@ -1,0 +1,14 @@
+<section>
+  <h1>DIFFERENT BUTTONS, SAME COMPONENT!</h1>
+  <span>{{message}}</span>
+  <div class="btns-container">
+    <app-button [buttonConfig]="textBtnConfig" (textBtnClickEmt)="onClickEventReceived($event)">
+    </app-button>
+
+    <br>
+
+    <app-button [buttonConfig]="imgBtnConfig" (imgBtnClickEmt)="onClickEventReceived($event)">
+    </app-button>
+  </div>
+
+</section>
